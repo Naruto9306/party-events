@@ -1,0 +1,213 @@
+<!-- Topbar Start -->
+    <div class="container-fluid">
+        <div class="row bg-secondary py-2 px-lg-5">
+            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-white pr-3" href="">FAQs</a>
+                    <span class="text-white">|</span>
+                    <a class="text-white px-3" href="">Ayuda</a>
+                    <span class="text-white">|</span>
+                    <a class="text-white pl-3" href="">Soporte</a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-white px-3" href="">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a class="text-white px-3" href="">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a class="text-white px-3" href="">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a class="text-white px-3" href="">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a class="text-white pl-3" href="">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row py-3 px-lg-5">
+            <div class="col-lg-4">
+                <a href="" class="navbar-brand d-none d-lg-block">
+                    <h1 class="m-0 display-5 text-capitalize"><img src="./assets/img/logoFull1.png"
+          class="img-fluid" alt="No imagen" bg-color="#303030" width="70" height="70"> <span class="text-primary">No lo dudes, </span>búscanos</h1>
+                </a>
+            </div>
+            <div class="col-lg-8 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <div class="d-inline-flex flex-column text-center pr-3 border-right">
+                        <h6>Abierto</h6>
+                        <p class="m-0">8.00AM - 9.00PM</p>
+                    </div>
+                    <div class="d-inline-flex flex-column text-center px-3 border-right">
+                        <h6>Nuestro correo</h6>
+                        <p class="m-0">info@example.com</p>
+                    </div>
+                    <div class="d-inline-flex flex-column text-center pl-3">
+                        <h6>LLámanos</h6>
+                        <p class="m-0">+53 55829123</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+            <a href="" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span class="text-primary">Reserva </span>aquí</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="/inicio" class="nav-item nav-link ">Inicio</a>
+                    <!-- <a href="/reserva" class="nav-item nav-link">Reserva</a> -->
+                    <a href="/precios" class="nav-item nav-link">Precios</a>
+                    <!-- <a href="booking.html" class="nav-item nav-link">Booking</a> -->
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mis reservas</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="/reserva" class="dropdown-item">Solicitar reservar</a>
+                            <a href="#!" class="dropdown-item">Consultar reservas</a>
+                        </div>
+                    </div>
+                    <a href="/servicios" class="nav-item nav-link">Nuestros servicios</a>
+                    <a href="/about" class="nav-item nav-link">Sobre la empresa</a>
+                    <a href="/contactos" class="nav-item nav-link active">Contáctanos</a>
+                </div>
+                <a href="" class="btn btn-lg btn-primary px-3 d-none d-lg-block">Obtener cuota</a>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid pt-5">
+        <div class="d-flex flex-column text-center mb-5 pt-5">
+            <h4 class="text-secondary mb-3">Contáctanos </h4>
+            <h1 class="display-4 m-0">Contáctanos para <span class="text-primary">cualquier consulta</span></h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-8 mb-5">
+                <div class="contact-form">
+                    <div id="success"></div>
+                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <div class="control-group">
+                            <input type="text" class="form-control p-4" id="name" placeholder="Nombre y apellidos" required="required" data-validation-required-message="Por favor escriba su nombre y apellidos" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <input type="email" class="form-control p-4" id="email" placeholder="Correo electrónico" required="required" data-validation-required-message="Por favor escriba su correo" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <input type="text" class="form-control p-4" id="subject" placeholder="Asunto" required="required" data-validation-required-message="Por favor escriba un asunto" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <textarea class="form-control p-4" rows="6" id="message" placeholder="Mensaje" required="required" data-validation-required-message="Por favor escriba su mensaje"></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary py-3 px-5" type="submit" id="sendMessageButton">Enviar mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-12 mb-n2 p-0">
+                <iframe style="width: 100%; height: 500px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sCuba%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="row pt-5">
+            <div class="col-lg-4 col-md-12 mb-5">
+                <h1 class="mb-3 display-5 text-capitalize text-white"><span class="text-primary">PARTY&</span>EVENTS</h1>
+                <p class="m-0">Sobre esto...</p>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-primary mb-4">Donde encontrarnos</h5>
+                        <p><i class="bi bi-geo-alt-fill mr-2"></i>123 Calle, La Habana, Cuba</p>
+                        <p><i class="bi bi-telephone-fill mr-2"></i>+53 00000000</p>
+                        <p><i class="bi bi-envelope-fill mr-2"></i>info@example.com</p>
+                        <div class="d-flex justify-content-start mt-4">
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="bi bi-twitter"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="bi bi-facebook"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="bi bi-linkedin"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-primary mb-4">Rutas populares</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="/inicio"><i class="bi bi-caret-right-fill mr-2"></i>Inicio</a>
+                            <a class="text-white mb-2" href="/about"><i class="bi bi-caret-right-fill mr-2"></i>Sobre el sitio</a>
+                            <a class="text-white mb-2" href="/servicios"><i class="bi bi-caret-right-fill mr-2"></i>Nuestros Servicios</a>
+                            <a class="text-white mb-2" href="/precios"><i class="bi bi-caret-right-fill mr-2"></i>Precios</a>
+                            <a class="text-white" href="/contactos"><i class="bi bi-caret-right-fill mr-2"></i>Contáctanos</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-primary mb-4">Tu valoración</h5>
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" class="form-control border-0" placeholder="Nombre y apellidos" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control border-0" placeholder="Correo electrónico" required="required" />
+                            </div>
+                            <div>
+                                <button class="btn btn-lg btn-primary btn-block border-0" type="submit">Enviar ahora</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white py-4 px-sm-3 px-md-5" style="background: #1976d2;">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white">
+                    &copy; <a class="text-white font-weight-bold" href="#">Dilo con globos</a>. Todos los derechos reservados. @2024
+                    <!-- <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a> -->
+                </p>
+            </div>
+            <div class="col-md-6 text-center text-md-right">
+                <ul class="nav d-inline-flex">
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Privacidad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Términos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Ayuda</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <!-- Back to Top -->
+    <a href="" class="btn btn-lg btn-primary back-to-top"><i class="bi bi-caret-up-fill"></i></a>
+
