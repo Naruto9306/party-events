@@ -1,3 +1,5 @@
+<link rel="stylesheet" [href]="sanitizer.bypassSecurityTrustResourceUrl(cssUrl)">
+<link rel="stylesheet" [href]="sanitizer.bypassSecurityTrustResourceUrl(cssUrl2)">
  <!-- Topbar Start -->
     <div class="container-fluid">
         <div class="row bg-secondary py-2 px-lg-5">
@@ -69,20 +71,20 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                 <div class="navbar-nav mr-auto py-0">
-                    <a href="/inicio" class="nav-item nav-link ">Inicio</a>
+                    <a href="inicio" class="nav-item nav-link ">Inicio</a>
                     <!-- <a href="/reserva" class="nav-item nav-link">Reserva</a> -->
-                    <a href="/precios" class="nav-item nav-link">Precios</a>
+                    <a href="precios" class="nav-item nav-link">Precios</a>
                     <!-- <a href="booking.html" class="nav-item nav-link">Booking</a> -->
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mis reservas</a>
                         <div class="dropdown-menu rounded-0 m-0">
-                            <a href="/reserva" class="dropdown-item active">Solicitar reservar</a>
+                            <a href="reserva" class="dropdown-item active">Solicitar reservar</a>
                             <a href="#!" class="dropdown-item">Consultar reservas</a>
                         </div>
                     </div>
-                    <a href="/servicios" class="nav-item nav-link">Nuestros servicios</a>
-                    <a href="/about" class="nav-item nav-link">Sobre la empresa</a>
-                    <a href="/contactos" class="nav-item nav-link">Contáctanos</a>
+                    <a href="servicios" class="nav-item nav-link">Nuestros servicios</a>
+                    <a href="about" class="nav-item nav-link">Sobre la empresa</a>
+                    <a href="contactos" class="nav-item nav-link">Contáctanos</a>
                 </div>
                 <a href="" class="btn btn-lg btn-primary px-3 d-none d-lg-block">Obtener cuota</a>
             </div>
@@ -94,7 +96,7 @@
     <div class="container-fluid bg-light">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-5">
+                <div class="col-lg-4">
                     <div class="bg-primary py-5 px-4 px-sm-5">
                         <form class="py-5">
                             <div class="form-group">
@@ -121,14 +123,84 @@
                                     <option value="3">Service 3</option>
                                 </select>
                             </div>
-                            <div>
+                            <!-- <div>
                                 <button class="btn btn-dark btn-block border-0 py-3" type="submit">Reservar ahora</button>
-                            </div>
+                            </div> -->
                         </form>
                     </div>
                 </div>
-                
-            </div>
+                <div class="col-lg-4">
+                    <div class="bg-primary py-5 px-4 px-sm-5">
+                        <form class="py-5">
+                            <div class="form-group">
+                                <input type="text" class="form-control border-0 p-4" placeholder="Nombre y apellidos" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control border-0 p-4" placeholder="Correo electrónico" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <div class="date" id="date" data-target-input="nearest">
+                                    <input type="text" class="form-control border-0 p-4 datetimepicker-input" placeholder="Fecha de reservación" data-target="#date" data-toggle="datetimepicker"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="time" id="time" data-target-input="nearest">
+                                    <input type="text" class="form-control border-0 p-4 datetimepicker-input" placeholder="Hora de reservación" data-target="#time" data-toggle="datetimepicker"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <select class="custom-select border-0 px-4" style="height: 47px;">
+                                    <option selected>Seleccione un servicio</option>
+                                    <option value="1">Service 1</option>
+                                    <option value="2">Service 2</option>
+                                    <option value="3">Service 3</option>
+                                </select>
+                            </div>
+                            <!-- <div>
+                                <button class="btn btn-dark btn-block border-0 py-3" type="submit">Reservar ahora</button>
+                            </div> -->
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-primary py-5 px-4 px-sm-5">
+                        <form class="py-5">
+                            <div class="form-group">
+                                <input type="text" class="form-control border-0 p-4" placeholder="Nombre y apellidos" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control border-0 p-4" placeholder="Correo electrónico" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <div class="date" id="date" data-target-input="nearest">
+                                    <input type="text" class="form-control border-0 p-4 datetimepicker-input" placeholder="Fecha de reservación" data-target="#date" data-toggle="datetimepicker"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="time" id="time" data-target-input="nearest">
+                                    <input type="text" class="form-control border-0 p-4 datetimepicker-input" placeholder="Hora de reservación" data-target="#time" data-toggle="datetimepicker"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <select class="custom-select border-0 px-4" style="height: 47px;">
+                                    <option selected>Seleccione un servicio</option>
+                                    <option value="1">Service 1</option>
+                                    <option value="2">Service 2</option>
+                                    <option value="3">Service 3</option>
+                                </select>
+                            </div>
+                            <!-- <div>
+                                <button class="btn btn-dark btn-block border-0 py-3" type="submit">Reservar ahora</button>
+                            </div> -->
+                        </form>
+                    </div>
+                </div>
+            </div><br>
+            <div class="container-fluid align-items-center">
+                <div>
+                    <button class="btn btn-dark btn-block border-0 py-3" type="submit">Reservar ahora</button>
+                </div>
+            </div><br>
         </div>
     </div>
     <!-- Booking Start -->
@@ -464,7 +536,7 @@
                     <div class="col-md-4 mb-5">
                         <h5 class="text-primary mb-4">Donde encontrarnos</h5>
                         <p><i class="bi bi-geo-alt-fill mr-2"></i>123 Calle, La Habana, Cuba</p>
-                        <p><i class="bi bi-telephone-fill mr-2"></i>+53 00000000</p>
+                        <p><i class="bi bi-telephone-fill mr-2"></i>+53 55829123</p>
                         <p><i class="bi bi-envelope-fill mr-2"></i>info@example.com</p>
                         <div class="d-flex justify-content-start mt-4">
                             <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="bi bi-twitter"></i></a>
@@ -529,4 +601,4 @@
     </div>
     <!-- Footer End -->
     <!-- Back to Top -->
-    <a href="" class="btn btn-lg btn-primary back-to-top"><i class="bi bi-caret-up-fill"></i></a>
+    <a href="" class="btn btn-lg btn-primary back-to-top"><i class="bi bi-chevron-double-up"></i></a>

@@ -2631,13 +2631,13 @@ fieldset:disabled a.btn {
 
 .btn-dark {
   color: #fff;
-  background-color: #181818;
+  background-color: #d25a31;
   border-color: #181818;
 }
 
 .btn-dark:hover {
   color: #fff;
-  background-color: #050505;
+  background-color: #5e2b1a;
   border-color: black;
 }
 

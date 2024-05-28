@@ -313,7 +313,7 @@ src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zd
   <a routerLink="" routerLinkActive="active" ariaCurrentWhenActive="page"><img
     width="40"
     alt="Angular Logo"
-    src="/assets/img/logoFull1.png"
+    src="./assets/img/logoFull1.png"
   /></a>
   <span>BIENVENIDO </span>
     <div class="spacer"></div>
@@ -332,19 +332,38 @@ src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zd
 </div>
 
 <div class="content" role="main">
+<!-- <div class="col-xl-10 col-lg-12 col-md-9">
+<div class="card o-hidden border-0 shadow-lg my-5">
+                    <div class="card-body p-0"> -->
+                        <!-- Nested Row within Card Body -->
+                       <!--  <div class="row">
+                            <div class="col-lg-6 d-none d-lg-block bg-login-image"></div> -->
+                          
 
 <section class="vh-90">
+
+  <!-- <h4>Tutorials List</h4>
+    <ul class="list-group">
+      <li
+        class="list-group-item"
+        *ngFor="let correo of correos; let i = index"
+        [class.active]="i == currentIndex"
+        
+      >
+        {{ correo.direccion }}
+      </li>
+    </ul> -->
   <div class="container py-5 h-100">
     <div class="row d-flex align-items-center justify-content-center h-90">
       <div class="col-md-8 col-lg-7 col-xl-6">
-        <img src="/assets/img/fondoFull.png"
-          class="img-fluid" alt="Phone image" bg-color="#303030">
+        <img src="./assets/img/fondoFull.png"
+          class="img-fluid align-items-center justify-content-center" alt="Phone image" bg-color="#303030">
       </div>
       <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
 
-        <form>
+        <form [formGroup]="loginForm">
           <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
-            <img src="/assets/img/logoo2.png" width="" height="" 
+            <img src="./assets/img/logoo2.png" width="" height="" 
           class="img-fluid" alt="Phone image" bg-color="#303030">
           
           </div>
@@ -354,15 +373,18 @@ src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zd
           </div>
            Email input -->
 
-          <div data-mdb-input-init class="form-outline mb-4">
-            <input type="email" id="correo" class="form-control form-control-lg" placeholder="Correo electrónico" />
-            <label class="form-label" for="correo">Correo electrónico</label>
+          <div data-mdb-input-init class="form-outline mb-4 form-group">
+            <input class="form-control" formControlName="email" type="text" name="email" placeholder="Correo electrónico">
+            <!-- <input type="email" id="correo" class="form-control form-control-lg" placeholder="Correo electrónico" />
+            <label class="form-label" for="correo">Correo electrónico</label> -->
+            <label class="form-label" for="email">Correo electrónico</label>
           </div>
 
           <!-- Password input -->
-          <div data-mdb-input-init class="form-outline mb-4">
-            <input type="password" id="contras" class="form-control form-control-lg" placeholder="Contraseña" />
-            <label class="form-label" for="contras">Contraseña</label>
+          <div data-mdb-input-init class="form-outline mb-4 form-group">
+            <!-- <input type="password" id="contras" class="form-control form-control-lg" placeholder="Contraseña" /> -->
+            <input class="form-control" formControlName="password" type="password" name="password" placeholder="Contraseña">
+            <label class="form-label" for="password">Contraseña</label>
           </div>
 
           <div class="d-flex justify-content-around align-items-center mb-4">
@@ -379,7 +401,7 @@ src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zd
             <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg"
               style="padding-left: 2.5rem; padding-right: 2.5rem;" (click)="onSubmit()">Entrar</button>
               
-            <p class="small fw-bold mt-2 pt-1 mb-0">No tengo cuenta? <a href="#!"
+            <p class="small fw-bold mt-2 pt-1 mb-0">No tengo cuenta? <a href="/registro"
                 class="link-danger">Registrarme</a></p>
           </div>
         </form>

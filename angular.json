@@ -21,7 +21,7 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
+              "src/favicon2.ico",
               "src/assets"
             ],
             "styles": [
@@ -34,6 +34,7 @@
               "src/assets/css/style.css",
               "src/assets/css/all.min.css",
               "src/assets/css/full.css",
+              "src/assets/css/fonts.css",
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
@@ -49,6 +50,19 @@
               "src/assets/mail/jqBootstrapValidation.min.js",
               "src/assets/mail/contact.js",
               "src/assets/js/main.js",
+              // scripts nuevos admin
+              // "src/assets/Estilos/vendor/jquery/jquery.min.js",
+              // "src/assets/Estilos/vendor/bootstrap/js/bootstrap.bundle.min.js",
+              // "src/assets/Estilos/vendor/jquery-easing/jquery.easing.min.js",
+              // "src/assets/Estilos/js/sb-admin-2.min.js",
+              // "src/assets/Estilos/vendor/chart.js/Chart.min.js",
+              // "src/assets/Estilos/js/demo/chart-area-demo.js",
+              // "src/assets/Estilos/js/demo/chart-pie-demo.js",
+              // {
+              //   "input": "external/button-upload/button-upload.js",
+              //   "inject": true,
+              //   "bundleName": "upload-button-js"
+              // }
 
             ],
           },

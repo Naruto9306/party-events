@@ -9,6 +9,9 @@ import { ContactosComponent } from './contactos/contactos.component';
 import { AboutComponent } from './about/about.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { PiesComponent } from './pies/pies.component';
+import { RegistroComponent } from './registro/registro.component';
+import { AdminComponent } from './admin/admin.component';
+import { LoginadminComponent } from './loginadmin/loginadmin.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -20,6 +23,9 @@ const routes: Routes = [
   { path: 'servicios', component: ServiciosComponent },
   { path: 'contactos', component: ContactosComponent },
   { path: 'pies', component: PiesComponent },
+  { path: 'registro', component: RegistroComponent},
+  { path: 'admin', component: AdminComponent},
+  { path: 'loginadmin', component: LoginadminComponent}
 ];
 
 @NgModule({
