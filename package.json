@@ -21,11 +21,13 @@
     "@angular/platform-browser-dynamic": "^15.2.0",
     "@angular/router": "^15.2.0",
     "@ng-bootstrap/ng-bootstrap": "^16.0.0",
+    "@sweetalert2/ngx-sweetalert2": "^12.3.0",
     "angular-cli-github-pages": "^0.2.0",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "gh-pages": "^6.1.1",
     "rxjs": "~7.8.0",
+    "sweetalert2": "^11.11.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
   },

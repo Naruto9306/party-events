@@ -12,6 +12,7 @@ import { PiesComponent } from './pies/pies.component';
 import { RegistroComponent } from './registro/registro.component';
 import { AdminComponent } from './admin/admin.component';
 import { LoginadminComponent } from './loginadmin/loginadmin.component';
+import { ValidarRegistroComponent } from './validar-registro/validar-registro.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -25,7 +26,8 @@ const routes: Routes = [
   { path: 'pies', component: PiesComponent },
   { path: 'registro', component: RegistroComponent},
   { path: 'admin', component: AdminComponent},
-  { path: 'loginadmin', component: LoginadminComponent}
+  { path: 'loginadmin', component: LoginadminComponent},
+  { path: 'confirmar', component: ValidarRegistroComponent }
 ];
 
 @NgModule({

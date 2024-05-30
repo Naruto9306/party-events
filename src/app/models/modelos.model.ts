@@ -1,10 +1,10 @@
-export class Correos{
+export interface Correos{
 	idcorreo? : any;
 	direccion? : string;
 	password? : string;
 }
 
-export class Personas{
+export interface Personas{
 	idpersona? : any;
 	ci? : string;
 	nombre? : string;
@@ -17,17 +17,17 @@ export class Personas{
     idcorreos? : any;
 }
 
-export class Municipio{
+export interface Municipio{
 	idmunicipio? : any;
 	descripcion? : string;
 }
 
-export class Provincia{
+export interface Provincia{
 	idprovincia? : any;
 	descripcion? : string;
 }
 
-export class Pais{
+export interface Pais{
 	idpais? : any;
 	descripcion? : string;
 }

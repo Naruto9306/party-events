@@ -13,6 +13,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "lodash"
+            ],
             "outputPath": "dist/party-full",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -28,8 +31,8 @@
               "node_modules/bootstrap/scss/bootstrap.scss",
               "node_modules/bootstrap-icons/font/bootstrap-icons.css",
               "src/styles.css",
-              "src/assets/lib/flaticon/font/flaticon.css", 
-              "src/assets/lib/owlcarousel/assets/owl.carousel.min.css", 
+              "src/assets/lib/flaticon/font/flaticon.css",
+              "src/assets/lib/owlcarousel/assets/owl.carousel.min.css",
               "src/assets/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css",
               "src/assets/css/style.css",
               "src/assets/css/all.min.css",
@@ -63,7 +66,6 @@
               //   "inject": true,
               //   "bundleName": "upload-button-js"
               // }
-
             ],
           },
           "configurations": {

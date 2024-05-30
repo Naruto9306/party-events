@@ -19,6 +19,7 @@ import { RegistroComponent } from './registro/registro.component';
 import { AdminComponent } from './admin/admin.component';
 import { LoginadminComponent } from './loginadmin/loginadmin.component';
 import { dataService } from './servicioDatos/globos.service';
+import { ValidarRegistroComponent } from './validar-registro/validar-registro.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { dataService } from './servicioDatos/globos.service';
     PiesComponent,
     RegistroComponent,
     AdminComponent,
-    LoginadminComponent
+    LoginadminComponent,
+    ValidarRegistroComponent
   ],
   imports: [
     BrowserModule,

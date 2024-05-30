@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { FormGroup, FormControl, Validators, NgForm } from '@angular/forms';
+import { AlertaServicios } from '../servicioDatos/alertas.service';
 
 @Component({
   selector: 'app-registro',
@@ -7,6 +9,13 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./registro.component.css']
 })
 export class RegistroComponent implements OnInit{
+  private alertas = inject(AlertaServicios);
+  loginForm = new FormGroup({
+      nombre: new FormControl('', {
+        validators: [Validators.required]
+      }),
+      password: new FormControl('', { validators: [Validators.required] })
+    });
   constructor(
     //public autentica: FormGroup,
     private route: ActivatedRoute,
@@ -24,6 +33,11 @@ export class RegistroComponent implements OnInit{
 
   async onSubmit() {
    //const cap = this.loginForm.value.email, this.loginForm.value.password;
-   this.router.navigate(['/login']);
+   // this.router.navigate(['/confirmar']);
+    this.preguntarEnvio();
+  }
+
+  public preguntarEnvio(): void{
+    this.alertas.ConfirmarRegistro();
   }
 }
